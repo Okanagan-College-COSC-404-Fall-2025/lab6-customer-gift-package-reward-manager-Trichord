@@ -18,10 +18,10 @@ BEGIN
                     DBMS_OUTPUT.PUT_LINE('Gift: ' || r.GIFTS(r.GIFTS.COUNT));
                 ELSE
                     DBMS_OUTPUT.PUT_LINE('No Gifts');
-              END IF;
+                END IF;
 
-              v_i := v_i + 1;
-              EXIT WHEN v_i > v_max_rows;
+            v_i := v_i + 1;
+            EXIT WHEN v_i > v_max_rows;
     END LOOP;
 END SHOW_GIFTS;
 /
